@@ -1,0 +1,6 @@
+<?php
+require_once __DIR__.'/includes/modules.php';roles_required(['admin']);
+ui_head('Configuración del administrador','Accesos centralizados a los módulos y al mantenimiento de registros.','bi-gear');
+echo '<section class="surface"><div class="surface-heading"><span class="section-icon"><i class="bi bi-sliders"></i></span><div><h2>Herramientas administrativas</h2><p>Elimina o edita registros desde su módulo de administración correspondiente.</p></div></div><div class="card-grid">';
+foreach(module_defs() as $key=>$m)echo '<article class="opportunity"><h3><i class="bi '.e($m['icon']).'"></i> '.e($m['title']).'</h3><p>Consultar registros y realizar operaciones de mantenimiento.</p><div class="spacer"></div><a class="btn btn-secondary" href="GestionarRegistros.php?modulo='.e($key).'">Administrar <i class="bi bi-arrow-right"></i></a></article>';
+echo '</div><div class="row-actions" style="margin-top:22px"><a class="btn btn-secondary" href="AprobarCuentas.php"><i class="bi bi-person-check"></i> Aprobar cuentas</a><a class="btn btn-secondary" href="CorregirTipoCuenta.php"><i class="bi bi-person-gear"></i> Corregir tipo de cuenta</a><a class="btn btn-secondary" href="ConfigurarDemoEmpresas.php"><i class="bi bi-building"></i> Empresas de prueba</a></div></section>';ui_foot();

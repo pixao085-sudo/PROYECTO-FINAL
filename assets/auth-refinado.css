@@ -1,0 +1,107 @@
+/* Empleabilidad INAC · Acceso · Revisión final
+   Cambios de presentación exclusivamente. No modifica datos o sesiones. */
+:root {
+  --auth-bg: #101b2e;
+  --auth-card: #17283e;
+  --auth-outline: rgba(185,208,233,.21);
+  --auth-copy: #f5f8fc;
+  --auth-muted: #bdcde0;
+  --auth-blue: #4a90d9;
+}
+html { color-scheme: dark; }
+body.auth-page {
+  background: #101b2e;
+  color: #f5f8fc;
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+}
+.auth-backdrop {
+  background: linear-gradient(180deg, #14243a 0%, #101b2e 58%, #101b2e 100%);
+}
+.auth-topbar { padding: 22px clamp(19px,4vw,58px); border-bottom: 1px solid rgba(187,209,231,.10); }
+.auth-topbrand { font-weight: 600; letter-spacing: -.1px; }
+.auth-topbrand-icon { background: none; border-radius: 10px; border: 1px solid rgba(170,203,237,.28); }
+.auth-topbar-caption { font-size: 12px; }
+.auth-main { padding: 42px 16px 40px; }
+.auth-card {
+  width: min(100%, 485px);
+  border-radius: 22px;
+  background: #17283e;
+  border: 1px solid rgba(174,204,231,.23);
+  box-shadow: 0 20px 48px rgba(1,9,23,.27);
+}
+.auth-intro { padding: 37px 38px 10px; }
+.auth-emblem {
+  width: 88px;
+  height: 88px;
+  border-radius: 21px;
+  margin: 0 auto 23px;
+  background: #233e5b;
+  border: 1px solid rgba(178,207,238,.28);
+  box-shadow: none;
+}
+.auth-emblem-orbit, .auth-emblem::after { display: none; }
+.auth-emblem-center {
+  width: 100%; height: 100%;
+  background: none; border: 0; border-radius: 19px; box-shadow: none;
+  color: #eef6ff;
+}
+.auth-emblem-center svg { width: 52px; height: 52px; }
+.auth-kicker { color: #98badc; font-size: 10px; letter-spacing: 1.45px; font-weight: 700; margin-bottom: 11px; }
+.auth-intro h1 { font-size: clamp(27px,4.2vw,31px); font-weight: 720; letter-spacing: -.6px; }
+.auth-institution { color: #d2e3f6; font-size: 13px; }
+.auth-tagline { font-size: 12.5px; line-height: 1.6; max-width: 330px; margin-top: 13px; color: #acbfd3; }
+.auth-form-zone { padding: 23px 39px 39px; }
+.auth-tabs { background: #102238; border: 1px solid rgba(168,195,224,.21); border-radius: 10px; margin: 6px 0 20px; }
+.auth-tab { border-radius: 7px; font-weight: 630; padding: 11px; color: #b7cce0; }
+.auth-tab.active { background: #355b81; box-shadow: none; }
+.auth-panel-description { font-size: 12.5px; margin-bottom: 20px; }
+.auth-field { gap: 7px; margin-bottom: 17px; }
+.auth-field label { font-size: 12px; font-weight: 650; }
+.auth-input-wrap {
+  background: #102238;
+  border: 1px solid #41607d;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.auth-input-wrap:focus-within { border-color: #86baf0; box-shadow: 0 0 0 2px rgba(74,144,217,.22); }
+.auth-input-wrap>i { color: #a3c0dc; }
+.auth-input-wrap input,.auth-input-wrap select {
+  height: 49px; border-radius: 8px !important;
+  color: #f5f8fc !important;
+  background-color: #102238 !important;
+  caret-color: #f5f8fc !important;
+  color-scheme: dark;
+}
+.auth-input-wrap input::placeholder { color: #a7b9cc; opacity: 1; }
+/* Cuando Chrome, Safari o Edge rellenan el usuario, la capa nativa
+   puede pintarlo claro; forzamos fondo y texto oscuros/claros coherentes. */
+.auth-input-wrap input:-webkit-autofill,
+.auth-input-wrap input:-webkit-autofill:hover,
+.auth-input-wrap input:-webkit-autofill:focus,
+.auth-input-wrap input:-webkit-autofill:active,
+.auth-input-wrap input:autofill {
+  -webkit-text-fill-color: #f5f8fc !important;
+  -webkit-box-shadow: 0 0 0 1000px #102238 inset !important;
+  box-shadow: 0 0 0 1000px #102238 inset !important;
+  background-color: #102238 !important;
+  caret-color: #f5f8fc !important;
+  color: #f5f8fc !important;
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+.auth-input-wrap input:-moz-autofill { box-shadow: inset 0 0 0 1000px #102238 !important; color: #f5f8fc !important; }
+.auth-input-wrap select { background-color: #102238 !important; }
+.auth-submit { background: #4a90d9; border: 0; border-radius: 9px; box-shadow: none; min-height: 50px; font-weight: 700; }
+.auth-submit:hover { background: #70ade9; color: #0d2337; box-shadow: none; transform: none; }
+.auth-show-password { color: #bad5ee; }
+.auth-assistance { font-size: 11.5px; color: #b5cade; }
+.auth-footer { padding-bottom: 23px; color: #a1b6c9; }
+@media(max-width:600px) {
+  .auth-topbar { padding: 16px 18px; }
+  .auth-main { padding: 23px 13px 25px; }
+  .auth-card { border-radius: 18px; }
+  .auth-intro { padding: 29px 24px 7px; }
+  .auth-emblem { width: 76px; height: 76px; border-radius: 18px; margin-bottom: 17px; }
+  .auth-emblem-center svg { width: 46px; height: 46px; }
+  .auth-form-zone { padding: 20px 24px 30px; }
+}
+@media(max-width:355px) { .auth-form-zone { padding-left: 18px; padding-right: 18px; } }

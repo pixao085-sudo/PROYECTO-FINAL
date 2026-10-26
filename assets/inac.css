@@ -1,0 +1,68 @@
+/* Identidad visual institucional — Empleabilidad INAC.
+   Paleta oficial igual que dashboard.php: #142B4A, #4A90D9, #F3F6FA, #FFFFFF. */
+:root{--navy:#142B4A;--blue:#4A90D9;--bg:#F3F6FA;--white:#FFFFFF;--text:#26364A;--muted:#68778A;--line:#E0E7EF;--light:#EAF3FC;--shadow:0 10px 28px rgba(20,43,74,.055)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 'Segoe UI',system-ui,-apple-system,sans-serif}
+a{color:var(--navy)}.shell{max-width:1080px;margin:0 auto;padding:25px 24px 48px}
+.module-topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px}
+.brand-inline{display:flex;align-items:center;gap:11px;color:var(--navy);font-size:16px;font-weight:600;letter-spacing:-.2px}
+.brand-inline small{display:block;color:var(--muted);font-size:11px;letter-spacing:.2px;font-weight:400;margin-top:-3px}
+.brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:11px;background:var(--navy);color:#D6E9FC;font-size:19px}
+.back-link{display:inline-flex;align-items:center;gap:11px;padding:11px 17px;border-radius:10px;border:1px solid #CADAEA;background:var(--white);color:var(--navy);font-weight:650;font-size:13px;box-shadow:0 3px 9px rgba(20,43,74,.045);text-decoration:none;transition:background .17s,border-color .17s,transform .17s,box-shadow .17s}
+.back-link i{font-size:18px;color:var(--blue);line-height:1}.back-link:hover,.back-link:focus-visible{background:var(--light);border-color:var(--blue);transform:translateX(-2px);box-shadow:0 6px 14px rgba(20,43,74,.085);outline-offset:3px}
+.page-banner{display:flex;align-items:center;gap:19px;background:var(--navy);color:var(--white);padding:30px 33px;border-radius:15px;margin-bottom:24px;box-shadow:0 8px 19px rgba(20,43,74,.1)}
+.banner-icon{display:grid;place-items:center;width:59px;height:59px;flex-shrink:0;background:rgba(74,144,217,.20);border:1px solid rgba(185,220,255,.2);border-radius:14px;font-size:28px;color:#A6D0FD}
+.eyebrow{font-size:10px;font-weight:800;letter-spacing:1.7px;color:#B3D2F0;margin-bottom:5px}
+.page-banner h1{margin:0;font-weight:750;letter-spacing:-.35px;font-size:25px;line-height:1.35}
+.page-banner p{color:#D8E5F3;font-size:13px;margin:7px 0 0;line-height:1.65}
+.surface{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:29px 31px;margin-bottom:23px;box-shadow:var(--shadow)}
+.surface-heading{display:flex;gap:14px;align-items:center;margin-bottom:25px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.section-icon{background:var(--light);color:var(--blue);display:grid;place-items:center;border-radius:11px;width:43px;height:43px;font-size:20px;flex-shrink:0}
+.surface h2{margin:0;font-size:17px;letter-spacing:-.2px;color:var(--navy)}.surface-heading p{color:var(--muted);font-size:12px;margin:2px 0 0}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px 20px}.field{display:flex;flex-direction:column;gap:7px}.field:has(textarea){grid-column:1/-1}
+.field label{font-size:13px;font-weight:650;color:var(--navy)}.required{color:#397BC3}
+.field input,.field select,.field textarea{width:100%;min-width:0;border:1px solid #CAD5E2;border-radius:9px;padding:12px 13px;font:inherit;font-size:14px;color:var(--text);background:#FFF;transition:border-color .18s,box-shadow .18s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 3px rgba(74,144,217,.16)}
+.field input::placeholder,.field textarea::placeholder{color:#8491A0}.field textarea{min-height:110px;resize:vertical}
+.form-actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:11px;margin-top:12px;padding-top:22px;border-top:1px solid var(--line)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 19px;border-radius:10px;border:1px solid transparent;font-size:13px;font-weight:700;line-height:1.45;text-decoration:none;cursor:pointer;transition:background .18s,transform .18s,box-shadow .18s,border-color .18s;font-family:inherit}
+.btn i{font-size:16px}.btn:hover,.btn:focus-visible{transform:translateY(-1px);outline-offset:3px}
+.btn-primary{background:var(--navy);color:#fff}.btn-primary:hover{background:#234A77;color:#fff;box-shadow:0 6px 14px rgba(20,43,74,.14)}
+.btn-secondary{background:#EAF3FC;border-color:#C6DDF6;color:var(--navy)}.btn-secondary:hover{background:#DCECFB;color:var(--navy)}
+.btn-muted{background:#F4F6F9;border-color:#DDE5EE;color:var(--navy)}.btn-muted:hover{background:#E9EFF6}
+.btn-danger{background:#FFF4F4;color:#AA2727;border-color:#E9B6B6}.btn-danger:hover{background:#FBE6E6}
+.alert{border-radius:11px;margin:0 0 20px;padding:15px 18px;font-weight:600;font-size:13px;border:1px solid}.alert-ok{background:#E8F6EB;border-color:#B6DDBC;color:#225F37}.alert-error{background:#FDECEC;border-color:#ECC2C2;color:#8C2929}.alert-info{background:#EAF3FC;border-color:#C6DFF5;color:var(--navy)}
+.page-footer{text-align:center;color:#8994A2;font-size:12px;margin:23px 0}.page-footer span{margin:0 5px}
+.table-wrap{width:100%;overflow-x:auto;border-radius:9px;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;font-size:13px}thead{background:var(--navy);color:#fff}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:12px;font-weight:650;white-space:nowrap}tbody tr:hover{background:#F6FAFE}tbody tr:last-child td{border-bottom:none}
+.tag{display:inline-flex;align-items:center;padding:3px 9px;background:var(--light);color:var(--navy);border-radius:20px;font-weight:650;font-size:11px}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.opportunity{background:#fff;padding:20px;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:9px}
+.opportunity h3{font-size:17px;line-height:1.45;color:var(--navy);margin:0}.opportunity p{margin:0;color:var(--muted);font-size:13px}.opportunity .spacer{flex:1}.row-actions{display:flex;gap:8px;flex-wrap:wrap}.muted{color:var(--muted)}.small{font-size:12px}.empty{padding:25px;background:#F8FAFD;border:1px dashed #CAD5E2;border-radius:10px;color:var(--muted);text-align:center}
+.login-page{min-height:100vh;display:grid;place-items:center;padding:24px}.login-shell{width:min(940px,100%);display:grid;grid-template-columns:43% 57%;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 20px 45px rgba(20,43,74,.1);overflow:hidden}
+.login-intro{background:var(--navy);padding:46px 38px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:65px}.login-intro h1{font-size:32px;line-height:1.2;letter-spacing:-.5px;margin:26px 0 14px}.login-intro p{color:#C7D9EE;font-size:14px;line-height:1.75;margin:0}.login-intro .mark{width:52px;height:52px;border-radius:13px;background:rgba(74,144,217,.25);display:grid;place-items:center;color:#B7DAFA;font-size:24px}.login-intro .bottom-label{font-size:12px;color:#BED0E2}
+.login-form-side{padding:39px 41px}.login-form-side h2{margin:0 0 7px;font-size:23px;color:var(--navy)}.login-form-side .caption{color:var(--muted);font-size:13px;margin:0 0 22px}
+.tabs{display:flex;gap:7px;border-bottom:1px solid var(--line);margin-bottom:22px}.tab-btn{background:none;color:var(--muted);border:0;border-bottom:3px solid transparent;padding:9px 15px 13px;font-weight:700;cursor:pointer}.tab-btn.active{border-color:var(--blue);color:var(--navy)}.tab-panel[hidden]{display:none}.login-form-side .field{margin-bottom:14px}.login-form-side .btn-primary{width:100%;margin-top:12px;padding:13px}
+@media(max-width:700px){.shell{padding:16px 14px 28px}.module-topbar{align-items:flex-start;gap:12px}.brand-inline{font-size:14px}.back-link{padding:10px 12px}.back-link span{display:none}.back-link i{font-size:21px}.page-banner{padding:22px;gap:13px}.page-banner h1{font-size:21px}.banner-icon{width:49px;height:49px;font-size:23px}.surface{padding:21px 18px}.form-grid,.card-grid{grid-template-columns:1fr}.field:has(textarea){grid-column:1}.login-shell{grid-template-columns:1fr}.login-intro{padding:24px 28px;gap:10px}.login-intro h1{font-size:23px;margin:8px 0}.login-intro p{display:none}.login-intro .bottom-label{display:none}.login-form-side{padding:28px 23px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+
+.table-wrap select{max-width:140px;min-width:120px;border:1px solid var(--line);border-radius:8px;padding:8px;color:var(--navy);background:white;font-family:inherit;font-size:12px}
+.table-wrap .btn{padding:8px 10px;font-size:12px}.row-actions form{margin:0}.surface-heading+p{margin-top:0}
+
+/* V3: formularios de verificación, avisos y controles sin amarillo */
+.honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.check-row{display:flex;align-items:flex-start;gap:9px;color:var(--navy);font-size:13px;line-height:1.55;margin:13px 0}.check-row input{width:auto!important;min-width:17px;min-height:17px;margin-top:3px;accent-color:var(--blue)}
+.opportunity .row-actions{margin-top:6px}.opportunity .row-actions form{margin:0}.opportunity .row-actions .btn{white-space:normal}
+.surface .alert{margin-top:10px}.surface form>button.btn{margin-top:12px}
+.session-box small{line-height:1.55}
+
+/* V4: compatibilidad de los formularios y pie institucional */
+[hidden], .honeypot[hidden] { display: none !important; }
+.login-page{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px}
+.login-copyright{text-align:center;color:#77879A;font-size:11px;line-height:1.75;max-width:900px;padding:0 10px}
+.login-copyright span{display:block}
+.page-footer{line-height:1.75;max-width:100%;margin-top:30px}
+.page-footer .footer-subline{display:block;margin-top:2px}
+.account-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 15px}
+.account-stat{border:1px solid var(--line);border-radius:11px;padding:13px 15px;background:#F8FAFD}
+.account-stat span{display:block;font-size:12px;color:var(--muted)}
+.account-stat strong{display:block;font-size:23px;font-weight:800;color:var(--navy)}
+@media(max-width:450px){.account-summary{grid-template-columns:1fr 1fr}.account-stat{padding:11px 12px}}
